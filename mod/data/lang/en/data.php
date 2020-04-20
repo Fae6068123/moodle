@@ -194,6 +194,7 @@ $string['headerjstemplate'] = 'Defines custom Javascript for manipulating the wa
 $string['headerlisttemplate'] = 'Defines browsing interface for multiple entries';
 $string['headerrsstemplate'] = 'Defines appearance of entries in RSS feeds';
 $string['headersingletemplate'] = 'Defines browsing interface for a single entry';
+$string['humanreadabledate'] = 'Date fields in human-readable format';
 $string['checkbox'] = 'Checkbox';
 $string['chooseexportfields'] = 'Choose the fields you wish to export:';
 $string['chooseexportformat'] = 'Choose the format you wish to export to:';
