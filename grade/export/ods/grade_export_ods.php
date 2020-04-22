@@ -120,7 +120,12 @@ class grade_export_ods extends grade_export {
                 }
             }
             // Time exported.
-            $myxls->write_string($i, $j++, time());
+            if (optional_param('humanreadabledate', false, PARAM_BOOL)){
+                $myxls->write_string($i, $j++, userdate(time()));
+            } else{
+                $myxls->write_string($i, $j++, time());
+            }
+            
         }
         $gui->close();
         $geub->close();

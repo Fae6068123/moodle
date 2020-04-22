@@ -113,8 +113,16 @@ class grade_export_txt extends grade_export {
                 }
             }
             // Time exported.
-            $exportdata[] = time();
+                        
+            if (optional_param('humanreadabledate', false, PARAM_BOOL)){
+                $exportdata[] = userdate(time());
+            } else{
+                $exportdata[] = time();
+            }
+            
             $csvexport->add_data($exportdata);
+            
+            
         }
         $gui->close();
         $geub->close();
